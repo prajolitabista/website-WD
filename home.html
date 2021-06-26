@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organic Green: Home Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script >
+		var image1=new Image();
+		image1.src="images/image1.png" ;
+		var image2=new Image() ;
+		image2.src="images/image2.jpg"  ;
+		var image3=new Image() ;
+		image3.src="images/image3.jpg" ;
+		var image4=new Image() ;
+		image4.src="images/image4.jpg" ;
+		
+	</script>
+
+</head>
+<body>
+	<!--go to top nav-->
+	<a id="Top"></a>
+	<div class="container">
+		<div class="header">
+			<div class="nav">
+				<a href="index.html">
+					<img src="images/logo.png" alt="logo" class="logo1">
+					
+				</a>
+				<ul id="menu-items">
+					
+					<li><a href="home.html"> Home </a></li>
+					<li><a href="about.html"> About Us </a></li>
+					<li><a href="product.html"> Products </a></li>
+					<li><a href="contact.html"> Contact Us </a></li>
+					<li><a href="blog.html"> Blogs </a></li>
+					<li><a href="favorite.html"> Favorite </a></li>
+					<li class="cart"><a href="cart.html"> <ion-icon name="basket"></ion-icon>Cart</a></li>
+
+				</ul>
+				<img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="image">
+			</div>
+
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+			
+		</div>
+
+		<!--Image Slider-->
+
+		<div class="slider">
+			<img src="image2.jpg" id="slide"  alt="image">
+			<script>
+				var step=1
+				function slideit(){
+					if (!document.images)
+						return;
+					document.images.slide.src=eval("image"+step+".src");
+					document.images.slide.src=eval("image"+step+".src");
+					if (step<4)
+						step++;
+					else
+						step=1;
+					setTimeout("slideit()", 2200);
+				}
+				slideit()
+			</script>	
+		</div>	
+		<!--Feature facts Section-->
+		<div class="categories">
+			<div class="small-container">
+				<h2 class="title">Did you Know?</h2>
+				<div class="row">
+					<div class="col-3">
+						<a href="images/feature1.png"  target="_blank">
+							<img src="images/feature1.png" alt="image" >
+						</a>
+						
+					</div>
+					<div class="col-3">
+						<a href="images/feature2.jpg" target="_blank">
+							<img src="images/feature2.jpg" alt="image">
+						</a>
+						
+					</div>
+					<div class="col-3">
+						<a href="images/feature3.jpg" target="_blank">
+							<img src="images/feature3.jpg" alt="image">
+						</a>
+					</div>	
+				</div>
+			</div>	
+		</div>
+		<!--Most Selling Section-->
+		<div class="small-container">
+			<h2 class="title">Most Selling Products</h2>
+			<div class="row">
+				<div class="col-4">
+					<img src="images/product1.jpg" alt="image">
+					<h4>Brinjal (Egg plant) 1 kg</h4>
+					<p>Rs 143.00</p>
+					<a href="product.html"><button>View More</button></a>
+				</div>
+				<div class="col-4">
+					<img src="images/product2.jpg" alt="image">
+					<h4>Capsicum (1 kg)</h4>
+					<p>Rs 198.00</p>
+					<a href="product.html"><button>View More</button></a>
+				</div>
+				<div class="col-4">
+					<img src="images/product7.jpg" alt="image">
+					<h4>Carrot (1 kg)</h4>
+					<p>Rs 350.00 </p>
+					<a href="product.html"><button>View More</button></a>
+				</div>
+				<div class="col-4">
+					<img src="images/product8.jpg" alt="image">
+					<h4>Cauliflower (1 kg)</h4>
+					<p>Rs 200.00 </p>
+					<a href="product.html"><button>View More</button></a>
+				</div>
+
+			</div>
+		</div>
+		<!-- Fresh Product-->
+		<h2 class="title">Fresh Products</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/product5.jpg" alt="image">
+				<h4>Ripe Pumpkin (1 kg)</h4>
+				<p>Rs 110.00</p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+			<div class="col-4">
+				<img src="images/product6.png" alt="image">
+				<h4>Cucumber (1 kg)</h4>
+				<p>Rs 155.00</p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+			
+			<div class="col-4">
+				<img src="images/product3.jpg" alt="image">
+				<h4>Avocado (1 kg)</h4>
+				<p>Rs 160.00 </p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+			<div class="col-4">
+				<img src="images/product4.jpg" alt="image">
+				<h4>Jumla Apple (1 kg)</h4>
+				<p>Rs 150.00 </p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/product9.jpg" alt="image">
+				<h4>Kiwi (1 kg)</h4>
+				<p>Rs 330.00</p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+			<div class="col-4">
+				<img src="images/product10.jpg" alt="image">
+				<h4>Strawberries(1 kg)</h4>
+				<p>Rs 250.00</p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+			<div class="col-4">
+				<img src="images/product11.jpg" alt="image">
+				<h4>Mustang Apple (1 kg)</h4>
+				<p>Rs 250.00 </p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+			<div class="col-4">
+				<img src="images/product12.png" alt="image">
+				<h4>Junar (1 kg)</h4>
+				<p>Rs 150.00 </p>
+				<a href="product.html"><button>View More</button></a>
+			</div>
+
+		</div>
+		<!--Footer-->
+		<div class="footer">
+			<div class="footercontainer">
+				<div class="row">
+					<div class="footer-col-1">
+						<img src="images/logo.png" alt="logo">
+						<p>Organic Green is a young and dynamic company aspiring to be a leader in the Organic food industry. </p>
+						
+						
+					</div>
+					<div class="footer-col-2">
+						<h3>Useful Links</h3>
+						<ul>
+							<li><a href="home.html"> Home </a></li>
+							<li><a href="about.html"> About Us </a></li>
+							<li><a href="product.html"> Products </a></li>
+							<li><a href="contact.html"> Contact Us </a></li>
+							<li><a href="blog.html"> Blogs </a></li>
+							<li><a href="favorite.html"> Favorite </a></li>
+							
+						</ul>
+						
+					</div>
+					<div class="footer-col-3">
+						<h3>Follow Us</h3>
+						<ul>
+							<li><a href="https://www.facebook.com/prajolita/">Facebook</a></li>
+							<li><a href="https://www.instagram.com/prajolitabista/">Instagram</a></li>
+							<li><a href="https://www.youtube.com/channel/UCRE2hHHgkB_Jd5ARvuncFdg">Youtube</a></li>
+							<li><a href="https://mobile.twitter.com/BistaPrajolita">Twitter</a></li>
+						</ul>	
+					</div>	
+				</div>
+				<br>
+				<div class="footer-col-4">
+					<a href="#Top" class="button"> Go to Top &uarr;</a>
+				</div>
+				<br>
+				<hr>
+				<p class="copyright">Prajolita Bista &copy; 2021. All rights reserved</p>
+			</div>	
+		</div>
+	</div>
+	<script>
+		var menuItems=document.getElementById("menu-items")
+		menuItems.style.maxHeight ="0px";
+		function menutoggle(){
+			if(menuItems.style.maxHeight =="0px")
+			{
+				menuItems.style.maxHeight ="200px"
+			}
+			else{
+				menuItems.style.maxHeight ="0px"
+			}
+		}
+	</script>
+</body>
+</html>
